@@ -1,0 +1,26 @@
+/* styling */
+nav {
+    background-color: #f8f9fa; /* Set the background color of the navigation menu */
+    padding: 10px 0; /* Add padding to the top and bottom of the navigation menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set the color of navigation links */
+    font-size: 16px; /* Set the font size of navigation links */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change link color on hover */
+}
