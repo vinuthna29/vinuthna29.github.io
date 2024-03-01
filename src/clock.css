@@ -1,0 +1,43 @@
+/* clock.css */
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #333;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background-color: #333;
+}
+
+.hour-hand {
+    width: 5px;
+    height: 50px;
+    top: 50px;
+    left: 97px;
+    transform-origin: 50% 100%;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 70px;
+    top: 30px;
+    left: 98px;
+    transform-origin: 50% 100%;
+}
+
+.second-hand {
+    width: 1px;
+    height: 80px;
+    top: 20px;
+    left: 99px;
+    transform-origin: 50% 100%;
+}

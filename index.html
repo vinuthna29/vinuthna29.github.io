@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=src/main.html">
     <title>Redirecting...</title>
+    <script>
+        if (location.pathname === '/' || location.pathname === '/index.html') {
+            window.history.replaceState({}, document.title, '/');
+        } else {
+            window.location.href = 'src/main.html';
+        }
+    </script>
 </head>
 <body>
     <p>Redirecting, <a href="src/main.html">click here</a>.</p>

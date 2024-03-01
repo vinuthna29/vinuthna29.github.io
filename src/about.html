@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- primary language for the document is set to english -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+        <link rel="stylesheet" href="clock.css"> <!-- Link to your clock CSS file -->
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="./main.html" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">About</a></li>
+                <li><a href="./blog/blog.html" class="nav-link">Blog</a></li>
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+
+         <!-- Background -->
+        <!-- <div id="background1"></div> -->
+         <!-- Overlay -->
+         <div class="overlay"></div>
+
+        <!-- Main content -->
+        
+        <div class="container">
+            <h1> Vinuthna welcomes U! </h1>
+            <img src="./../data/profile.jpg" alt="Profile Picture" class="profile-pic">
+        </div>    
+        <p> Exploring this page is like trying to solve a mystery – even I can't figure out myself sometimes! But hey, that's part of the adventure, right? </p>
+        
+        <div class="container-vertical">
+            <div class="clock-container">
+                <div id="clock"></div>
+            </div>
+            <div class="guess-container">
+                <h1>Location Guessing Game</h1>
+                <p>Can you guess my location? Take a look at the clock and choose wisely:</p>
+                <form id="guess-form">
+                    <label for="guess-options">Select your guess:</label>
+                    <select id="guess-options">
+                        <option value="New York">A) New York, USA</option>
+                        <option value="Tokyo">B) Tokyo, Japan</option>
+                        <option value="Mumbai">C) Mumbai, India</option>
+                        <option value="London">D) London, UK</option>
+                    </select>
+                    <button type="submit">Submit Guess</button>
+                </form>
+                <div id="result"></div>
+                <p>Hint: My timezone is displayed on the clock to the left!</p>
+            </div>
+        </div>
+         <!-- Analog Clock -->
+        <div id="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+        </div>
+        
+        <script src="clock.js"></script>
+
+
+    </body>
+</html>
+

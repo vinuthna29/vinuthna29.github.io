@@ -35,6 +35,10 @@ nav li {
     background-color: #0c2062; /* Darker green color on hover */
 }
 
+#time {
+    font-size: 24px;
+}
+  
 #background1 {
     position: fixed;
     top: 0;
@@ -43,7 +47,7 @@ nav li {
     height: 100%;
     background: linear-gradient(45deg, #8A2BE2, #8A2BE2, #4B0082, #0000FF, #00FF00, #FFFF00, #FFA500, #FF0000, #FF0000);
     background-size: 400% 400%;
-    animation: gradient1 30s ease infinite;
+    animation: gradient1 90s ease infinite;
     z-index: -1;
 }
 
@@ -78,6 +82,23 @@ nav li {
     max-width: auto; /* Set maximum width for content */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; 
+}
+
+.container-vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.clock-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.guess-container {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 
