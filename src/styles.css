@@ -86,6 +86,7 @@ nav li {
 
 .container-vertical {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 50px;
@@ -93,12 +94,14 @@ nav li {
 
 .clock-container {
     flex: 0 0 auto;
-    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-right: 200px; 
 }
 
 .guess-container {
     flex: 1 1 auto;
     text-align: center;
+    margin-bottom :100px;
 }
 
 

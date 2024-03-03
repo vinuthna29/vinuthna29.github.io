@@ -2,13 +2,15 @@
 
 #clock {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 10px solid #333;
+    margin-top: 200px; /* Adjust as needed */
+    margin-right: 200px; /* Adjust as needed */
 }
 
 .hour-hand,
