@@ -75,14 +75,20 @@ nav li {
 }
 
 .container {
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between; /* Align items to the start and end of the container */
-    align-items: flex-start;
-    max-width: auto; /* Set maximum width for content */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; 
-}
+    flex-wrap: wrap;
+  }
+  .left-content {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  .right-content {
+    flex: 1;
+    padding: 20px;
+  }
 
 .container-vertical {
     display: flex;
@@ -104,11 +110,22 @@ nav li {
     margin-bottom :100px;
 }
 
-
-
 .profile-pic {
-    width: 150px; /* Set width for profile picture */
-    height: 150px; /* Set height for profile picture */
-    border-radius: 60%; /* Make profile picture round */
-    margin-left: auto; /* Move profile picture to the right */
-}
+    /* max-width: 20%; */
+    width: 150px;
+    height: auto;
+    /* display: block; */
+    margin: 0 auto;
+    border-radius: 50%; /* Make profile picture round */
+    margin-left: auto;
+  }
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-content,
+    .right-content {
+      margin-right: 0;
+    }
+  }
