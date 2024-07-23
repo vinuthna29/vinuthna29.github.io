@@ -1,12 +1,52 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="refresh" content="0;url=src/main.html">
-     <title>Redirecting...</title>
- </head>
- <body>
-     <p>Redirecting, <a href="src/main.html">click here</a>.</p>
- </body>
- </html>
- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vinuthna’s Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hide navigation links initially */
+        .nav-links {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Vinuthna’s Space</h1>
+    </header>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">ℹ️ About Me</a></li>
+            <li><a href="blog.html">📝 Blog</a></li>
+            <li><a href="projects.html">🚀 Projects</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my personal space on the web! Here, I share my projects, thoughts, and everything geeky. Dive in to explore my work and passions.</p>
+        </section>
+        
+        <!-- Puzzle Section -->
+        <section id="puzzle">
+            <h2>Fun Puzzle</h2>
+            <p>Before you get to know me,</p>
+            <p id="puzzleQuestion">Loading a fun puzzle for you...</p>
+            <form id="puzzleForm">
+                <label for="answer">Your Answer:</label>
+                <input type="text" id="answer" name="answer" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    <footer>
+        <p>&copy; 2024 Vinuthna Venigalla. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="puzzle.js"></script>
+</body>
+</html>

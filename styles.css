@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #007acc;
+}
+
+nav {
+    background: #222;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 94, 140);
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: #333;
+}
+
+section h2 {
+    color: #00cc81; /* Consistent heading color */
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+section ul li a {
+    color: #0aca83; /* Link color */
+    text-decoration: none; /* Remove underline by default */
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    color: #ffcc00; /* Color when hovered */
+    text-decoration: underline; /* Underline on hover */
+}
+
+section ul li a:active {
+    color: #ff9900; /* Color when link is active */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-top: 2px solid #007acc;
+}
+
+.social-logo {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px; /* Space between logo and text */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Project Section Styles */
+.project {
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #ffcc00; /* Heading color within project section */
+    margin-bottom: 0.5rem; /* Space below heading */
+}
+
+.project p {
+    color: #f0f0f0; /* Text color within project section */
+}
+
+/* Initial state for more projects */
+.more-projects {
+    display: none; /* Hidden by default */
+}
+
+/* Specific Styles for Blog Section */
+#blog {
+    background: #333; /* Dark background for the blog section */
+    border: 1px solid #555; /* Border to distinguish the section */
+}
+
+#blog ul li a {
+    color: #00bfff; /* Blog link color */
+}
+
+#blog ul li a:hover {
+    color: #ffcc00; /* Blog link hover color */
+}
+
+/* Specific Styles for Contact Section */
+#contact {
+    background: #333; /* Darker background for the contact section */
+    border: 1px solid #555; /* Lighter border */
+}
+
+#contact ul li a {
+    color: #00bfff; /* Contact link color */
+}
+
+#contact ul li a:hover {
+    color: #ffcc00; /* Contact link hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .social-logo {
+        width: 20px; /* Smaller size for mobile */
+    }
+
+    section {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    #introduction {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    #introduction .about-img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #introduction p {
+        text-align: center; /* Center-align text on smaller screens */
+    }
+}
+
+/* About Me Section */
+#introduction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#introduction img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; 
+}
+
+#introduction div {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #5a285d;
+}
+
+/* Focus Styles */
+a:focus, button:focus {
+    outline: 2px solid #ffcc00; /* Highlight focus for better accessibility */
+}
+
+/* Transition Effects */
+a, button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#puzzle {
+    background: #444;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#aboutLink, #blogLink {
+    display: none;
+}
